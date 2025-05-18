@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IndianSky - Manage Your Bookings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #004aad;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      height: 40px;
+      margin-bottom: 0.5rem;
+      object-fit: contain;
+    }
+    .card a {
+      text-decoration: none;
+      display: block;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IndianSky - Manage Your Flight Bookings</h1>
+  </header>
+  <div class="container">
+    <div class="card">
+      <a href="https://www.goindigo.in/member/my-booking.html" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/IndiGo_Logo.svg" alt="">
+        IndiGo
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.airindia.com/in/en/manage/booking.html" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Air_India_Logo.svg" alt="">
+        Air India
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.spicejet.com/#manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/SpiceJet_logo.svg" alt="">
+        SpiceJet
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.akasaair.com/manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Akasa_Air_logo.svg" alt="">
+        Akasa Air
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.airindiaexpress.com/manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/72/Air_India_Express_logo.svg" alt="">
+        Air India Express
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://airasiaindia-stage.adobecqms.net/manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/AirAsia_New_Logo.svg" alt="">
+        AirAsia India
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.emirates.com/in/english/manage-booking/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Emirates_logo.svg" alt="">
+        Emirates
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.qatarairways.com/en/manage-booking.html" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Qatar_Airways_Logo.svg" alt="">
+        Qatar Airways
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.etihad.com/en-in/manage" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Etihad_Airways_Logo.svg" alt="">
+        Etihad Airways
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.saudia.com/Pages/manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Saudia_logo.svg" alt="">
+        Saudia
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.flydubai.com/en/book-and-manage/view-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Flydubai_Logo.svg" alt="">
+        Flydubai
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.omanair.com/en_in/manage-bookings" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Oman_Air_logo.svg" alt="">
+        Oman Air
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.gulfair.com/flying-with-us/before-you-fly/manage-your-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Gulf_Air_logo.svg" alt="">
+        Gulf Air
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://booking.salamair.com/en/mmb" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Salam_Air_logo.svg" alt="">
+        SalamAir
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.flynas.com/en-eu/manage-booking" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Flynas_logo.svg" alt="">
+        Flynas
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://www.airarabia.com/en/modify-flight" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Air_Arabia_logo.svg" alt="">
+        Air Arabia
+      </a>
+    </div>
+    <div class="card">
+      <a href="https://fly91.in/edit-booking" target="_blank">
+        <img src="https://fly91.in/_nuxt/img/fly91-logo.e0e9da0.svg" alt="">
+        Fly91
+      </a>
+    </div>
+  </div>
+</body>
+</html>
