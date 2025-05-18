@@ -2,158 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IndianSky - Manage Your Bookings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ManageTravel - Smart Fare Comparison</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #005bea, #00c6fb);
+      color: #fff;
     }
+
     header {
-      background-color: #004aad;
-      color: white;
-      padding: 1rem;
+      padding: 40px 20px;
       text-align: center;
     }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 20px;
-      padding: 2rem;
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-    .card {
-      background-color: white;
-      border-radius: 8px;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
     }
-    .card:hover {
-      transform: scale(1.05);
+
+    .search-box {
+      background: white;
+      color: black;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-    .card img {
-      height: 40px;
-      margin-bottom: 0.5rem;
-      object-fit: contain;
-    }
-    .card a {
-      text-decoration: none;
+
+    .search-box label {
       display: block;
-      color: #333;
+      margin-top: 15px;
+      margin-bottom: 5px;
       font-weight: bold;
+    }
+
+    .search-box input, .search-box select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .cta-button {
+      background-color: #0072ff;
+      color: white;
+      padding: 12px 20px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .cta-button:hover {
+      background-color: #0058cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .search-box { padding: 20px; }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>IndianSky - Manage Your Flight Bookings</h1>
+    <h1>ManageTravel</h1>
+    <p>Compare the cheapest flights from India's top portals</p>
   </header>
-  <div class="container">
-    <div class="card">
-      <a href="https://www.goindigo.in/member/my-booking.html" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/IndiGo_Logo.svg" alt="">
-        IndiGo
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.airindia.com/in/en/manage/booking.html" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Air_India_Logo.svg" alt="">
-        Air India
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.spicejet.com/#manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/SpiceJet_logo.svg" alt="">
-        SpiceJet
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.akasaair.com/manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Akasa_Air_logo.svg" alt="">
-        Akasa Air
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.airindiaexpress.com/manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/7/72/Air_India_Express_logo.svg" alt="">
-        Air India Express
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://airasiaindia-stage.adobecqms.net/manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/AirAsia_New_Logo.svg" alt="">
-        AirAsia India
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.emirates.com/in/english/manage-booking/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Emirates_logo.svg" alt="">
-        Emirates
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.qatarairways.com/en/manage-booking.html" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Qatar_Airways_Logo.svg" alt="">
-        Qatar Airways
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.etihad.com/en-in/manage" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Etihad_Airways_Logo.svg" alt="">
-        Etihad Airways
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.saudia.com/Pages/manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Saudia_logo.svg" alt="">
-        Saudia
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.flydubai.com/en/book-and-manage/view-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Flydubai_Logo.svg" alt="">
-        Flydubai
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.omanair.com/en_in/manage-bookings" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Oman_Air_logo.svg" alt="">
-        Oman Air
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.gulfair.com/flying-with-us/before-you-fly/manage-your-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Gulf_Air_logo.svg" alt="">
-        Gulf Air
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://booking.salamair.com/en/mmb" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Salam_Air_logo.svg" alt="">
-        SalamAir
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.flynas.com/en-eu/manage-booking" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/f/f5/Flynas_logo.svg" alt="">
-        Flynas
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://www.airarabia.com/en/modify-flight" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Air_Arabia_logo.svg" alt="">
-        Air Arabia
-      </a>
-    </div>
-    <div class="card">
-      <a href="https://fly91.in/edit-booking" target="_blank">
-        <img src="https://fly91.in/_nuxt/img/fly91-logo.e0e9da0.svg" alt="">
-        Fly91
-      </a>
-    </div>
-  </div>
+
+  <section class="search-box">
+    <form>
+      <label for="from">From</label>
+      <input type="text" id="from" name="from" placeholder="e.g., Delhi (DEL)" required />
+
+      <label for="to">To</label>
+      <input type="text" id="to" name="to" placeholder="e.g., Mumbai (BOM)" required />
+
+      <label for="date">Departure Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="portal">Select Travel Portal</label>
+      <select id="portal" name="portal">
+        <option value="all">All Portals</option>
+        <option value="akbar">Akbar Travels</option>
+        <option value="mmt">MakeMyTrip</option>
+        <option value="riya">Riya Travels</option>
+        <option value="cleartrip">Cleartrip</option>
+      </select>
+
+      <button type="submit" class="cta-button">Search Flights</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 ManageTravel. Built by Indian Travel Agents for Smart Travelers.
+  </footer>
+
 </body>
 </html>
